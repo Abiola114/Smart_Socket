@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart-socket</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        {% if alert %}
+            window.addEventListener('DOMContentLoaded', function() {
+                var link = document.createElement('a');
+                link.href = 'http://192.168.221.229/digitalWrite/9/1';
+                link.click();  // Trigger the link click to reload the link
+            });
+        {% endif %}
+    </script>
+
+</head>
+<body style="background-color: #BFCCB5">
+    <div>
+        <h1 style="text-align: center; color: #00425A; font-size: xx-large; font-weight: 700; text-align: center; padding: 30px 155px">
+            MICROCONTROLLER-BASED SMART HOME SYSTEM FOR EFFICIENT ENERGY CONSUMPTION
+        </h1>
+        <hr style="margin-bottom: 35px; border: none; border-top: 3px solid grey">
+<div>
+    <div class="flex-container" style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <div class="item" style="color:#0B2447; padding-right: 10px; font-size: large; padding-bottom: 25px">
+            <label for="sensor_value_0" style="font-weight: bold">Voltage (V):</label>
+            <input style="height: 40px; width: 150px; border: solid rgb(101, 100, 100); border-width: 2px; border-radius: 10px; text-align: center; background-color: #EFEFEF; font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);" type="text" id="sensor_value_0" readonly>
+        </div>
+        <div class="item" style="color:#0B2447; padding-right: 10px; font-size: large; padding-bottom: 25px">
+            <label for="sensor_value_1" style="font-weight: bold">Current (A):</label>
+            <input style="height: 40px; width: 150px; border: solid rgb(101, 100, 100); border-width: 2px; border-radius: 10px; text-align: center; background-color: #EFEFEF; font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);" type="text" id="sensor_value_1" readonly>
+        </div>
+        <div class="item" style="color:#0B2447; padding-right: 10px; font-size: large; padding-bottom: 25px">
+            <label for="sensor_value_2" style="font-weight: bold">Power Factor:</label>
+            <input style="height: 40px; width: 150px; border: solid rgb(101, 100, 100); border-width: 2px; border-radius: 10px; text-align: center; background-color: #EFEFEF; font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);" type="text" id="sensor_value_2" readonly>
+        </div>
+    </div>
+
+    <div class="flex-container" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+        <div class="item" style="color:#0B2447; padding-right: 10px; font-size: large; padding-bottom: 25px">
+            <label for="sensor_value_3" style="font-weight: bold">Power (W):</label>
+            <input style="height: 40px; width: 150px; border: solid rgb(101, 100, 100); border-width: 2px; border-radius: 10px; text-align: center; background-color: #EFEFEF; font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);" type="text" id="sensor_value_3" readonly>
+        </div>
+        <div class="item" style="color:#0B2447; padding-right: 10px; font-size: large; padding-bottom: 25px">
+            <label for="sensor_value_4" style="font-weight: bold">Energy (kWh):</label>
+            <input style="height: 40px; width: 150px; border: solid rgb(101, 100, 100); border-width: 2px; border-radius: 10px; text-align: center; background-color: #EFEFEF; font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);" type="text" id="sensor_value_4" readonly>
+        </div>
+        <div class="item" style="color:#0B2447; padding-right: 10px; font-size: large; padding-bottom: 25px">
+            <label for="last_updated" style="font-weight: bold">Last updated at:</label>
+            <input style="height: 40px; width: 250px; border: solid rgb(101, 100, 100); border-width: 2px; border-radius: 10px; text-align: center; background-color: #EFEFEF; font-size: 18px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);" type="text" id="last_updated" readonly>
+        </div>
+    </div>
+</div>
+
+
+
+        <div id="sensor_value"></div>
+    </div>
+
+    <script type="text/javascript">
+       $(document).ready(function() {
+    var socket = io.connect();
+    // Update the sensor value and last updated time
+    socket.on('updateSensorData', function(data) {
+        console.log("Received sensorData :: " + data.date + " :: " + data.valuea);
+        var sensor_values = data.value;
+        document.getElementById('sensor_value_0').value = data.value;
+        document.getElementById('sensor_value_1').value = data.valuea;
+        document.getElementById('sensor_value_2').value = data.valueb;
+        document.getElementById('sensor_value_3').value = data.valuec;
+        document.getElementById('sensor_value_4').value = data.valued;
+        document.getElementById('last_updated').value = data.date;
+    });
+});
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+

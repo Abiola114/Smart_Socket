@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "smart-socket-374918",
+  "private_key_id": "c98ad65883f57178dc8d2d7dac33285f4aa36332",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCx3KuZ59hYlgEh\nWD/bNaIBRHrviAT+vtpO7RunVxSAGE/eW6tZlgnPXSoC5P21BYZyFIrdFt+qAkJy\nb2aQBrJRlMjzpUfq3JGaa8rxhUBbt62X2DjZcKlL9wAFHeUzpDebcrdNyU89rsuu\nFNkBlolD3/U1fB5FTYUf3HL3I+itEyGZ6uKrjzLuntnUN77UAcAnccR3pSM7WvwC\nQ0ma9UoUuYnZ9nBCCIGleUCLW5cWQba7YXuwtoLHDm7TvxEme1JXNIwnwYUPYfPG\naE8KFNGEcVfsN5F2S6WB5M9dFT5VFlCuwWshFtrkY37Qh+omp31LmZH8fRAVvxBJ\nI3+XKPznAgMBAAECggEAFgM4nbiq9vPBug3BAXFW1o9SI7kS3TBjtmb0CDbny562\nq89umozONALUwzzyBWhkplPSh+Bf2Bule6I78FFT2nLul/D5wKCByLnUiSWzvGY0\nLtnM12RxH3y3XOrBRi3pz+xXsWHb08eBX88muGKYJHVgVLlCydL5SeMvu1SPZHQH\n2D3sYZwZefSJ/rC8fXJs0saEhOBsQtj5imQ34AG/nHZF6M0lMVC76Sre1WnVodLV\naHoTUrBmkL06xZ5nBegrixFj0wWUt4rx4llrZX0ibiG+Bt09OJ8aZnb9+JOA4aFa\n7+wbhlGvBdHHrHPxyY6RmhDIqgU/2ErWj2PWAfXumQKBgQDcwZV/50jov1G2h+7/\nAtR6MizcCCB2kwDU0UGDI00w+cs82hEcdbORXnVAyl0XEjhKvYW7myHS0q50SAH8\nYTyDxxFn8kHUmN1JZt7KsHNAFd5Ggva1VBlgbcg/2+Em5tIuazv3lLVNB+Z27fs+\nyVN7rYVgIRhGsMTcSgSOE6PthQKBgQDOQfqoH5GH8zTmWCj16KFRiPgLhSvy+CpK\n8JCV0rmgiAtrvRvV0cNFwChj3B3O5nLM4J3dCL5ng+Tm60WA9J0pzS4xCrAVDCIV\nbCcFECte5IQ6lJx7XmAAqmXVfc+1rcL2wzBAT0UzW1/J69c+NQMbkrRRVKBZPL7n\nEpUJQT3GewKBgHQiDvDrjoqK44Tf/BYBuh/St5DFYbafXSeYMhu3/YrPTmDj426S\naPYHuC1uiAx0FFMVYv4v/Vo4ZXhczValHL3CguCpLIKYLInJ6Vi9/NNw7a8whHMe\nG/+DoX4ewVLCyT2MQk7b14j/p/lW9v6v0RBWV70bi/bcVaQB+GV55Zo1AoGBAIqj\nGKt3BKgf1nfZ3DZmVkBq02dS7RaUrkDO8DB0gucfaqXRZ+tR4nJ41e1BYBvZFGMX\nu6R9oxYLNonsrDwgr58QVjMKnw6WqDZECvpBQxW2fhauG3xlFBx+bJKSzVGt6TVa\nP42KetYpXfpodrZOhbc75c4hFuLEjQDeoaSl4LMPAoGAHetLcuXdRfAGi27WQP4s\nCjSxmu9hCUy8sGcKBQZM9uIpyH5ACa2PzBvDNzjpqVdlEoqGpbmcgrvOOpsqYscS\ntTP556WZUOjNIQ7Rb3tbSubsIA99PUOUXqm5rWBehwklmlH+V6oE2npeSt0JhWfx\ntNIVjmE6doY2ADXymXmAqUc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "smart-socket@smart-socket-374918.iam.gserviceaccount.com",
+  "client_id": "110749873191393419931",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/smart-socket%40smart-socket-374918.iam.gserviceaccount.com"
+}
